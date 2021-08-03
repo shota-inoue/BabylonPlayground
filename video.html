@@ -26,8 +26,11 @@
 　<script>
 　　window.onload = function () {
 　　　var movie = document.getElementById("full-movie");
+　　　movie.onloadedmetadata = (event) => {
+　　　　console.log("event load");
+　　　} 
 　　　console.log(movie);
-　　　movie.addEventListener("loadedmetadata", function() {
+　　　movie.addEventListener('loadedmetadata', (event) => {
 　　　　console.log(loadedmetadata);
 　　　});
 　　}
