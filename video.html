@@ -25,7 +25,8 @@
   </body>
 　<script>
 　　var movie = document.getElementById("full-movie");
-　　movie.addEventListener("loadedmetadata", () => {
+　　console.log("movie");
+　　movie.addEventListener("loadedmetadata", function() {
 　　　console.log(loadedmetadata);
 　　});
 　</script>
