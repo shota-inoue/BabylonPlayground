@@ -24,10 +24,12 @@
   　　<video playsinline id="full-movie" src="see__full.mp4" oncontextmenu="return false;"></video>
   </body>
 　<script>
-　　var movie = document.getElementById("full-movie");
-　　console.log(movie);
-　　movie.addEventListener("loadedmetadata", function() {
-　　　console.log(loadedmetadata);
-　　});
+　　window.onload = function () {
+　　　var movie = document.getElementById("full-movie");
+　　　console.log(movie);
+　　　movie.addEventListener("loadedmetadata", function() {
+　　　　console.log(loadedmetadata);
+　　　});
+　　}
 　</script>
 </html>
