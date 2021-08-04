@@ -28,9 +28,13 @@
 　<script>
   　function click1(){
       console.log("click1");
+      var movie = document.getElementById("full-movie");
+      movie.play();
   }
   function click2(){
       console.log("click2");
+      var movie = document.getElementById("full-movie");
+movie.currentTime = 5;
   }
 　　window.onload = function () {
 　　　var movie = document.getElementById("full-movie");
