@@ -21,9 +21,17 @@
     ></script>
   </head>
   <body>
+    　<button onclick="click1()">ボタン1</button>
+  　　<button onclick="click2()">ボタン2</button>
   　　<video playsinline id="full-movie" src="see__full.mp4" oncontextmenu="return false;"></video>
   </body>
 　<script>
+  　function click1(){
+      console.log("click1");
+  }
+  function click2(){
+      console.log("click2");
+  }
 　　window.onload = function () {
 　　　var movie = document.getElementById("full-movie");
 　　　movie.onloadedmetadata = (event) => {
