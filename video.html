@@ -36,16 +36,13 @@
       var movie = document.getElementById("full-movie");
 movie.currentTime = 5;
   }
-　　window.onload = function () {
+// 　　window.onload = function () {
 　　　var movie = document.getElementById("full-movie");
-　　　movie.onloadedmetadata = (event) => {
-　　　　console.log("event load");
-　　　} 
 　　　console.log(movie);
 　　　movie.addEventListener('loadedmetadata', (event) => {
-　　　　console.log(loadedmetadata);
+　　　　console.log("loadedmetadata");
 　　　　movie.currentTime = 3;
 　　　});
-　　}
+// 　　}
 　</script>
 </html>
